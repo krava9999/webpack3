@@ -14,18 +14,9 @@ module.exports = {
     module: {
         // задаем правила для преобразования файлов
         rules: [{
-                test: /\\.css$/,
-                use: ['style-loader', 'css-loader']
-            },
-            {
-                test: /\\.scss$/i, // преобразование css
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
-            }
-        ],
+            test: /\.s[ac]ss$/i,
+            use: ['style-loader', 'css-loader', 'sass-loader']
+        }, ]
     },
     plugins: [
         new HtmlWebpackPlugin({
