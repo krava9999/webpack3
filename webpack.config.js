@@ -18,12 +18,21 @@ module.exports = {
                 test: /\.s[ac]ss$/i,
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
-            { // преобразование картинок 
-                test: /\.(png|jpe?g|gif)$/i,
-                loader: 'file-loader',
-                options: {
-                    name: '[path][name].[ext]',
-                },
+            // { // преобразование картинок 
+            //     test: /\.(png|jpe?g|gif)$/i,
+            //     loader: 'file-loader',
+            //     options: {
+            //         name: '[path][name].[ext]',
+            //     },
+            // },
+            {
+                test: /\.(png|jpe?g|webp|git|svg|gif)$/i,
+                use: [{
+                    loader: 'img-optimize-loader',
+                    options: {
+                        name: '[path][name].[ext]',
+                    },
+                }, ],
             },
         ]
     },
