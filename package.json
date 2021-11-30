@@ -3,20 +3,35 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "sass": "^1.43.5",
     "sass-loader": "^12.3.0",
-    "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --mode=development"
-
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "start": "webpack serve --mode=development --hot --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krava9999/webpack3.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krava9999/webpack3/issues"
+  },
+  "homepage": "https://github.com/krava9999/webpack3#readme"
 }
