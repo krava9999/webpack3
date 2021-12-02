@@ -14,14 +14,18 @@ $colorHeading: red;
         justify-content: space-between;
     }
 
-    &__item {
+    &__item,
+    &__video,
+    &__audio {
         display: flex;
         text-align: center;
         flex-direction: column;
         max-width: 320px;
+        width: 320px;
+        height: 270px;
         gap: 15px;
-        border: 1px solid grey;
         margin-top: 10px;
+        background-color: #f1f3f4
     }
 
     &__item-img {
