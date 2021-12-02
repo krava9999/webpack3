@@ -34,6 +34,24 @@ module.exports = {
                     },
                 }, ],
             },
+            {
+                test: /\.(mp3)$/i,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'audio'
+                    },
+                }, ]
+            },
+            {
+                test: /\.(mp4)$/i,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'video'
+                    },
+                }, ]
+            }
         ]
     },
     plugins: [
