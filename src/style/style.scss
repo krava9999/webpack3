@@ -1,0 +1,42 @@
+$colorHeading: red;
+
+.app {
+    width: 1024px;
+    margin: 0 auto;
+
+    &__heading {
+        color: $colorHeading;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item,
+    &__video,
+    &__audio {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        max-width: 320px;
+        width: 320px;
+        height: 270px;
+        gap: 15px;
+        margin-top: 10px;
+        background-color: #f1f3f4
+    }
+
+    &__item-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    &__item-heading {
+        text-transform: uppercase;
+        font-family: Arial;
+        font-size: 15px;
+        margin-top: 0;
+    }
+}
